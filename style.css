@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-	width: 800px;
+	width: 1200px;
 	/* margin-left: auto;
   margin-right: auto; */
 	margin: 0 auto;
@@ -198,7 +198,6 @@ nav a:link {
   display: block; */
 
 	margin-right: 30px;
-	margin-top: 10px;
 	display: inline-block;
 }
 
@@ -266,3 +265,50 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLEXBOX */
+.main-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.author-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+#author {
+	margin-bottom: 0;
+	margin-left: 15px;
+}
+
+.related-list {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.related-author {
+	margin-bottom: 0;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.main {
+	display: flex;
+	gap: 75px;
+	align-items: flex-start;
+}
+
+aside {
+	flex: 1;
+	margin-bottom: 0;
+}
+
+article {
+	flex: 0 0 825px;
+}
